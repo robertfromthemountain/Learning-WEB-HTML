@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Images</title>
+    <style>
+        img {
+            width: 300px;
+            height: 435px;
+        }
+
+        img:hover {
+            cursor: pointer;
+            width: 310px;
+            height: 445px;
+            transition:ease-in-out, 350ms;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Images can improve the design and the appearance of a web page.</h1>
+    <img src="image1.jpg" alt="Image of a black car." onclick="firstClick()">
+    <img src="image2.jpg" alt="Image of a red car." onclick="secondClick()">
+    <img src="image3.jpg" alt="Image of a white car." onclick="thirdClick()">
+
+    
+    <script>
+        function firstClick(){
+            alert("You clicked the first car!");
+        }
+        function secondClick(){
+            alert("You clicked the second car!");
+        }
+        function thirdClick(){
+            alert("You clicked the third car!");
+        }
+    </script>
+</body>
+
+</html>
