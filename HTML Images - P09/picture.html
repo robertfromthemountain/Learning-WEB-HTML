@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Picture</title>
+    </head>
+    <body>
+        <h1>Picture attribute</h1>
+        <h2>1. Bandwith:</h2>
+        <p>Small screen devices will not load images with large resolution, so you can add images with smaller resolution.</p>
+        <picture>
+            <source media="(min-width: 650px)" srcset="image1.jpg">
+            <source media="(min-width: 450px)" srcset="image2.jpg">
+            <img src="image3.jpg" alt="Picture of a car.">
+        </picture>
+
+        <h2>2. Format support:</h2>
+        <p>If a browser doesnt support an image format, you can give it an alternative image format:</p>
+        <picture>
+            <source srcset="img1.jpg">
+            <source srcset="img1.png">
+            <img src="image1.gif" alt="Gif of a moving car.">
+        </picture>
+    </body>
+</html>
